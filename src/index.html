@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Alexander Galea | Software Developer, Artist, M.Sc. Physics</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- This site is a fork of codepen https://codepen.io/TanGravam/pen/oNMEoaz -->
+    <!-- Using icons from https://www.flaticon.com/packs/education-633 -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Use container to make the content in the center of the page -->
+      <div class="container">
+        <header id="header">
+          <div id="personal-info">
+            <div class="avatar-container">
+              <img
+                src="/assets/alex_costa_rica_finca_chilanga_2022_sm.jpeg"
+                alt="Alexander Galea"
+                width="100"
+                height="100"
+              />
+            </div>
+            <div class="header-info-container">
+              <h1>Alexander Galea</h1>
+              <p>
+                Software Developer<br />
+                M.Sc. Physics <br />
+                <i>Toronto, ON</i>
+              </p>
+              <br />
+            </div>
+            <!-- <div class="header-icons">
+              <div class="header-icons-row first-icons">
+                <div class="header-icon-4"></div>
+                <div class="header-icon-2"></div>
+                <div class="header-icon-3"></div>
+              </div>
+              <div class="header-icons-row">
+                <div class="header-icon-7"></div>
+                <div class="header-icon-10"></div>
+                <div class="header-icon-12"></div>
+              </div>
+            </div> -->
+          </div>
+          <nav class="nav-container">
+            <ul>
+              <li class="active-bg" id="menu-item-1">
+                <button
+                  id="about-btn"
+                  onClick="btnClick('about')"
+                  class="blue-line"
+                >
+                  <img
+                    src="/assets/id-card.png"
+                    alt="about"
+                    width="40"
+                    height="40"
+                  />
+                  <p>About</p>
+                </button>
+              </li>
+              <li id="menu-item-2">
+                <button id="experience-btn" onClick="btnClick('experience')">
+                  <img
+                    src="/assets/briefcase.png"
+                    alt="Experience"
+                    width="40"
+                    height="40"
+                  />
+                  <p>Experience</p>
+                </button>
+              </li>
+              <li id="menu-item-3">
+                <button id="portfolio-btn" onClick="btnClick('portfolio')">
+                  <img
+                    src="/assets/atom.png"
+                    alt="Portfolio"
+                    width="40"
+                    height="40"
+                  />
+                  <p>Portfolio</p>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <section id="about">
+            <h3 class="underline">I Love to Create Things</h3>
+            <p>
+              At work, I create data sources and automation software for digital
+              marketing.
+            </p>
+            <p>In my free time I create web apps, NFTs and music.</p>
+            <p>What can I help you create?</p>
+            <h3 class="underline">Favorites Tools</h3>
+            <ul>
+              <li>Language: <b>Python</b></li>
+              <li>Workflow Orchestration: <b>Airflow</b></li>
+              <li>Compute: <b>GCP</b></li>
+              <li>Database: <b>BigQuery</b></li>
+              <li>Web Framework: <b>Vue</b></li>
+              <li>Blockchain: <b>Polygon</b></li>
+              <li>Editor: <b>VS Code + Vim</b></li>
+            </ul>
+            <h3 class="underline">Contact</h3>
+            <div>
+              <p>
+                agalea91@gmail.com <br />
+                <a href="https://www.linkedin.com/in/alex-galea/"
+                  >https://www.linkedin.com/in/alex-galea/</a
+                >
+              </p>
+            </div>
+            <h3 class="underline">Blog</h3>
+            <div>
+              <p>
+                <a href="https://medium.com/@galea"
+                  >https://medium.com/@galea</a
+                >
+              </p>
+            </div>
+          </section>
+          <section id="experience" class="display-none">
+            <h2>Experience</h2>
+            <div class="history">
+              <div data-year="2021">
+                <h3>Director of Data Engineering - <span>Ayima</span></h3>
+                <p>Data workflows, people management, client solutions</p>
+                <p class="history-indent">
+                  <span data-year="2023"></span> ➤ SEO / SEM Visibility
+                  Optimization
+                </p>
+                <p class="history-indent">
+                  <span data-year="2023"></span> ➤ Adspend MMM
+                </p>
+                <p class="history-indent">
+                  <span data-year="2022"></span> ➤ SEO Keyword Conversion
+                  Reporting
+                </p>
+                <p class="history-indent">
+                  <span data-year="2021"></span> ➤ Site Crawl Monitor Dashboard
+                </p>
+              </div>
+              <div data-year="2017">
+                <h3>Courseware Developer - <span>Packt</span></h3>
+                <p>
+                  Authored book
+                  <i>Applied Data Science with Python and Jupyter</i>
+                </p>
+                <p class="history-indent">
+                  <span data-year="2020"></span> ➤
+                  <a
+                    href="https://www.amazon.ca/Applied-Data-Science-Workshop-applications-dp-1800202504/dp/1800202504/ref=dp_ob_title_bk"
+                    >Published expanded 2nd edition</a
+                  >
+                </p>
+              </div>
+              <div data-year="2016">
+                <h3>Data Analyst - <span>Ayima</span></h3>
+                <p>Automation software, SQL, Google Analytics</p>
+                <p class="history-indent">
+                  <span data-year="2019"></span> ➤
+                  <a
+                    href="https://www.slideshare.net/AlexanderGalea1/using-ai-for-ecommerce-analytics"
+                    >AI for Ecommerce Analytics</a
+                  >
+                </p>
+              </div>
+              <div data-year="2014">
+                <h3>Researcher - <span>University of Guelph</span></h3>
+                <p>Simulated cold atomic particle systems</p>
+                <p class="history-indent">
+                  <span data-year="2016"></span> ➤
+                  <a
+                    href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.023602"
+                    >Published paper in Phys. Rev. A jounral</a
+                  >
+                </p>
+              </div>
+            </div>
+          </section>
+          <section id="portfolio" class="display-none">
+            <h2>Portfolio</h2>
+            <div class="grid">
+              <div class="grid-item">
+                <a href="https://get.coeus.eco/coffee" target="_blank">
+                  <div class="portfolio-image">
+                    <img
+                      src="/assets/portfolio_coeus.eco.png"
+                      alt="Project 1"
+                      width="200"
+                      height="200"
+                    />
+                  </div>
+                  <div class="portfolio-description">
+                    <h3>Coeus.eco</h3>
+                    <p>
+                      Digital label technology and online marketplace. Built by
+                      myself, with Vue.js and Python on GCP.
+                    </p>
+                    <br />
+                    <p>https://get.coeus.eco/</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="grid-item">
+                <a href="https://atomicnfts.xyz/" target="_blank">
+                  <div class="portfolio-image">
+                    <img
+                      src="/assets/portfolio_atomicnfts.png"
+                      alt="Project 1"
+                      width="200"
+                      height="200"
+                    />
+                  </div>
+                  <div class="portfolio-description">
+                    <h3>AtomicNFTs</h3>
+                    <p>
+                      Generative art of atomic diagrams. Built by myself, with
+                      JavaScript, Solidity, Vue.js and Python on AWS and
+                      Polygon.
+                    </p>
+                    <br />
+                    <p>https://atomicnfts.xyz/</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="grid-item">
+                <a
+                  href="https://music.apple.com/us/artist/alexander-galea/1661706499"
+                  target="_blank"
+                >
+                  <div class="portfolio-image">
+                    <img
+                      src="/assets/portfolio_philosophy.png"
+                      alt="Project 1"
+                      width="200"
+                      height="200"
+                    />
+                  </div>
+                  <div class="portfolio-description">
+                    <h3>Philosophy, Memories, Roses (EP)</h3>
+                    <p>
+                      Music albums. Written, performed and mixed by myself, with
+                      Logic Pro.
+                    </p>
+                    <br />
+                    <p>https://music.apple.com/</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
